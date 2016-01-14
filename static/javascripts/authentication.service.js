@@ -9,7 +9,7 @@
     .module('thinkster.authentication.services')
     .factory('Authentication', Authentication);
 
-  Authentication.$inject = ($cookies, $http) {
+  Authentication.$inject = [$cookies, $http];
 
   /**
   * @namespace Authentication
@@ -25,7 +25,7 @@
     };
  
     return Authentication;
-    
+
     //////////////////////////
 
     /**
