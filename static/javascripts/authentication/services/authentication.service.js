@@ -4,13 +4,13 @@
 */
 (function () {
   'use strict';
-
+ 
   angular
     .module('thinkster.authentication.services')
     .factory('Authentication', Authentication);
-
+ 
   Authentication.$inject = ['$cookies', '$http'];
-
+ 
   /**
   * @namespace Authentication
   * @returns {Factory}
@@ -25,9 +25,9 @@
     };
  
     return Authentication;
-
-    //////////////////////////
-
+ 
+    ////////////////////
+ 
     /**
     * @name register
     * @desc Try to register a new user
